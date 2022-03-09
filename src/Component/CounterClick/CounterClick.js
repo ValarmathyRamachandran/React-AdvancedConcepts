@@ -1,5 +1,6 @@
 import React from 'react'
-import UpdatedComponent from '../withCounter';
+import withCounter from '../withCounter';
+
 
 
 function CounterClick(props) {
@@ -21,4 +22,4 @@ function CounterClick(props) {
 
 
 
-export default UpdatedComponent(CounterClick)
+export default withCounter(CounterClick)

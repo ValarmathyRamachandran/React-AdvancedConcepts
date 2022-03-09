@@ -1,5 +1,5 @@
 import React from 'react'
-import UpdatedComponent from './withCounter';
+import withCounter from './withCounter';
 
 
 function HoverClick(props) {
@@ -16,4 +16,4 @@ const {count, handleCount } = props
   )
 }
 
-export default UpdatedComponent(HoverClick)
+export default withCounter(HoverClick)
