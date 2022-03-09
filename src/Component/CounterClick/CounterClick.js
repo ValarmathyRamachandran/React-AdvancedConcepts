@@ -4,17 +4,17 @@ import UpdatedComponent from '../withCounter';
 
 function CounterClick(props) {
 
-const [count,setCount] = React.useState(0)
+// const [count,setCount] = React.useState(0)
     
-const handleCount = () =>{
-        setCount(prevCount => prevCount + 1);
-}
+// const handleCount = () =>{
+//         setCount(prevCount => prevCount + 1);
+// }
            
-    console.log(count+"Hii" +props.name)
+  const {count, handleCount } = props
 
   return (
     <div>
-        <button onClick={handleCount}>{props.name} Counter Clicked by {count} times</button>
+        <button onClick={handleCount}> Counter Clicked by {count} times</button>
     </div>
   )
 }

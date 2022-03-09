@@ -4,14 +4,15 @@ import UpdatedComponent from './withCounter';
 
 function HoverClick(props) {
 
-const [count,setCount] = React.useState(0)
+// const [count,setCount] = React.useState(0)
 
-const handleCount = () =>{
-    setCount(prevCount => prevCount + 1);
-};
+// const handleCount = () =>{
+//     setCount(prevCount => prevCount + 1);
+// };
 
+const {count, handleCount } = props
   return (
-    <div onMouseOver={handleCount}>{props.name} HoverClick {count} times</div>
+    <div onMouseOver={handleCount}>HoverClick {count} times</div>
   )
 }
 
